@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Salman3TIE</string>
     <string name="menu_title">Menu Praktikum Mobile</string>
-    <string name="btn_to_second">Pertemuan 2 (SecondActivity)</string>
-    <string name="btn_to_third">Pertemuan 3 (ThirdActivity)</string>
-    <string name="btn_to_fourth">Pertemuan 4 (FourthActivity)</string>
+    <string name="btn_to_second">Pertemuan 2</string>
+    <string name="btn_to_third">Pertemuan 3</string>
+    <string name="btn_to_fourth">Pertemuan 4</string>
+    <string name="btn_to_fifth">Pertemuan 5</string>
+    <string name="btn_web_view">Buka Web View</string>
     <string name="verif_title">Verifikasi Login</string>
     <string name="kode_berhasil">Kode berhasil dikirim!</string>
     <string name="silakan_periksa">Silakan periksa nomor Anda</string>

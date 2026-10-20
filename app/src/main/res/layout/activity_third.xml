@@ -1,71 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:padding="24dp"
+    android:orientation="vertical"
     tools:context=".pertemuan_3.ThirdActivity">
 
-    <ImageView
-        android:id="@+id/imgMobile"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:contentDescription="@string/cd_smartphone"
-        android:src="@drawable/ic_mobile"
-        app:layout_constraintBottom_toTopOf="@+id/textVerif"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white" />
 
-    <TextView
-        android:id="@+id/textVerif"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/monsterrat_black"
-        android:text="@string/verif_title"
-        android:textColor="@color/text_dark"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/inputNoTujuan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgMobile" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
 
-    <EditText
-        android:id="@+id/inputNoTujuan"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:autofillHints="phone"
-        android:gravity="center"
-        android:hint="@string/hint_nomor"
-        android:inputType="phone"
-        android:padding="10dp"
-        android:textColor="@color/text_dark"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnKirim"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textVerif" />
+        <ImageView
+            android:id="@+id/imgMobile"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/cd_smartphone"
+            android:src="@drawable/ic_mobile"
+            app:layout_constraintBottom_toTopOf="@+id/textVerif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnKirim"
-        android:layout_width="240dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/dark_slate"
-        android:text="@string/btn_kirim"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:cornerRadius="26dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNoTujuan" />
+        <TextView
+            android:id="@+id/textVerif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/monsterrat_black"
+            android:text="@string/verif_title"
+            android:textColor="@color/text_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/inputNoTujuan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgMobile" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/inputNoTujuan"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:autofillHints="phone"
+            android:gravity="center"
+            android:hint="@string/hint_nomor"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnKirim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textVerif" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnKirim"
+            android:layout_width="240dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/dark_slate"
+            android:text="@string/btn_kirim"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputNoTujuan" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

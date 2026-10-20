@@ -11,6 +11,7 @@ import com.example.salman3tie.databinding.ActivityMainBinding
 import com.example.salman3tie.pertemuan_2.SecondActivity
 import com.example.salman3tie.pertemuan_3.ThirdActivity
 import com.example.salman3tie.pertemuan_4.FourthActivity
+import com.example.salman3tie.pertemuan_5.FifthActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,6 +50,12 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("name", "Politeknik Caltex Riau")
             intent.putExtra("from", "Rumbai")
             intent.putExtra("age", 25)
+            startActivity(intent)
+        }
+
+        // Tombol menuju Pertemuan 5 (FifthActivity)
+        binding.btnToFifth.setOnClickListener {
+            val intent = Intent(this, FifthActivity::class.java)
             startActivity(intent)
         }
     }

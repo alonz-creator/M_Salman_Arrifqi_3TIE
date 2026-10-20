@@ -2,11 +2,13 @@ package com.example.salman3tie.pertemuan_3
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.salman3tie.R
 import com.example.salman3tie.databinding.ActivityThirdBinding
 
 class ThirdActivity : AppCompatActivity() {
@@ -17,7 +19,6 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        // Inflate layout menggunakan ViewBinding
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -27,16 +28,33 @@ class ThirdActivity : AppCompatActivity() {
             insets
         }
 
-        // Event listener dengan ViewBinding
+        // Terapkan Toolbar
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.apply {
+            title = "Third Activity"
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+            setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+        }
+
         binding.btnKirim.setOnClickListener {
             val noTujuan = binding.inputNoTujuan.text.toString()
 
             Toast.makeText(this, "Nomor Tujuan: $noTujuan", Toast.LENGTH_SHORT).show()
 
-            // Intent untuk berpindah ke ThirdResultActivity
             val intent = Intent(this, ThirdResultActivity::class.java)
             intent.putExtra("NO_TUJUAN", noTujuan)
             startActivity(intent)
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressedDispatcher.onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }
