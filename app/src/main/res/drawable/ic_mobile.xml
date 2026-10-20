@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="180dp"
+    android:viewportWidth="120"
+    android:viewportHeight="180">
+    <!-- Phone Outer Body -->
+    <path
+        android:fillColor="#C8CED8"
+        android:pathData="M20,10 L100,10 A12,12 0 0,1 112,22 L112,158 A12,12 0 0,1 100,170 L20,170 A12,12 0 0,1 8,158 L8,22 A12,12 0 0,1 20,10 Z" />
+    <!-- Screen Bezel -->
+    <path
+        android:fillColor="#E2E7EC"
+        android:pathData="M22,12 L98,12 A10,10 0 0,1 108,22 L108,158 A10,10 0 0,1 98,168 L22,168 A10,10 0 0,1 12,158 L12,22 A10,10 0 0,1 22,12 Z" />
+    <!-- Screen Display -->
+    <path
+        android:fillColor="#2D3A4B"
+        android:pathData="M20,30 L100,30 A2,2 0 0,1 102,32 L102,144 A2,2 0 0,1 100,146 L20,146 A2,2 0 0,1 18,144 L18,32 A2,2 0 0,1 20,30 Z" />
+    <!-- Earpiece Speaker -->
+    <path
+        android:fillColor="#9AA4B2"
+        android:pathData="M52,20 L68,20 A2,2 0 0,1 70,22 L70,22 A2,2 0 0,1 68,24 L52,24 A2,2 0 0,1 50,22 L50,22 A2,2 0 0,1 52,20 Z" />
+    <!-- Home Button Outer Ring -->
+    <path
+        android:fillColor="#9AA4B2"
+        android:pathData="M60,157 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0" />
+    <!-- Home Button Inner Circle -->
+    <path
+        android:fillColor="#D8DDE5"
+        android:pathData="M60,157 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+</vector>
