@@ -95,7 +95,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="GitHub: @salman3tie\nInstagram: @salman_dev"
+                        android:text="GitHub: @alonz-creator\nInstagram: @alonz.official"
                         android:textColor="@color/text_dark"
                         android:textSize="15sp" />
 
@@ -117,7 +117,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Mobile Development, UI/UX Design, Gaming, &amp; Music"
+                        android:text="Berenang, Futsal"
                         android:textColor="@color/text_dark"
                         android:textSize="15sp" />
 
@@ -130,7 +130,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kekuatan Terbesar"
+                        android:text="Kelebihan"
                         android:textColor="@color/dark_slate"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -139,7 +139,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Fast Problem Solving, High Adaptability, Clean Code Architecture &amp; Strong Focus on User Experience"
+                        android:text="Ngedit, Photografer"
                         android:textColor="@color/text_dark"
                         android:textSize="15sp" />
 
