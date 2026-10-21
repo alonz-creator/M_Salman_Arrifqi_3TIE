@@ -5,6 +5,8 @@
     <string name="btn_to_third">Pertemuan 3</string>
     <string name="btn_to_fourth">Pertemuan 4</string>
     <string name="btn_to_fifth">Pertemuan 5</string>
+    <string name="btn_to_sixth">Pertemuan 6</string>
+    <string name="btn_to_seventh">Pertemuan 7</string>
     <string name="btn_web_view">Buka Web View</string>
     <string name="verif_title">Verifikasi Login</string>
     <string name="kode_berhasil">Kode berhasil dikirim!</string>
@@ -18,4 +20,25 @@
     <string name="btn_1">Tombol 1</string>
     <string name="title_main">Menu Utama</string>
     <string name="title_fourth">Fourth Activity</string>
+
+    <!-- Pertemuan 6 Strings -->
+    <string name="btn_login">Login</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_profile">Profil Developer</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="title_auth">Aplikasi Praktikum Mobile</string>
+    <string name="subtitle_auth">Silahkan masukkan Username dan Password Anda</string>
+    <string name="splash_slogan">Mobile App Development Course</string>
+    <string name="splash_version">Versi 1.0.0</string>
+    <string name="title_profile">Profil Developer</string>
+    <string name="welcome_user">Selamat datang, %1$s!</string>
+
+    <!-- Pertemuan 7 Bottom Nav & Fragment Strings -->
+    <string name="nav_home">Home</string>
+    <string name="nav_message">Message</string>
+    <string name="nav_more">More</string>
+    <string name="btn_fragment_1">Fragment 1</string>
+    <string name="btn_fragment_2">Fragment 2</string>
+    <string name="btn_fragment_3">Fragment 3</string>
 </resources>
