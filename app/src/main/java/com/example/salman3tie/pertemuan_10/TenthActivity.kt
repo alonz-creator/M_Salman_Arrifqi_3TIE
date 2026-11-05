@@ -1,23 +1,23 @@
-package com.example.salman3tie.pertemuan_9
+package com.example.salman3tie.pertemuan_10
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.salman3tie.databinding.ActivityNinthBinding
+import com.example.salman3tie.databinding.ActivityTenthBinding
 import com.google.android.material.chip.Chip
 
-class NinthActivity : AppCompatActivity() {
+class TenthActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityNinthBinding
+    private lateinit var binding: ActivityTenthBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityNinthBinding.inflate(layoutInflater)
+        binding = ActivityTenthBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
-            title = "Pertemuan 9 & 10"
+            title = "Pertemuan 10"
             setDisplayHomeAsUpEnabled(true)
         }
         binding.toolbar.setNavigationOnClickListener {

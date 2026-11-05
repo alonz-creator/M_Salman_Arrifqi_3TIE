@@ -65,7 +65,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".pertemuan_9.NinthActivity"
+            android:name=".pertemuan_10.TenthActivity"
             android:exported="false" />
 
     </application>

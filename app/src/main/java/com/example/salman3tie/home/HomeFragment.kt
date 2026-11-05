@@ -69,8 +69,8 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireContext(), ProfileActivity::class.java))
         }
 
-        binding.btnToNinth.setOnClickListener {
-            startActivity(Intent(requireContext(), com.example.salman3tie.pertemuan_9.NinthActivity::class.java))
+        binding.btnToTenth.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.salman3tie.pertemuan_10.TenthActivity::class.java))
         }
 
         binding.btnLogout.setOnClickListener {
